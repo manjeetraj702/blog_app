@@ -14,4 +14,4 @@ A full-stack blog application built using Flutter for both frontend and backend.
 - **Backend**: Dart with `dart_frog`
 - **Database**: Supabase
 
-# blog_app
+
