@@ -42,7 +42,7 @@ class BlogModel extends Blog {
       userId: json['user_id'] ?? '',
       title: json['title'] ?? '',
       content: json['content'] ?? '',
-      imgUrl: json['img_url'] ?? '',
+      imgUrl: json['image_url'] ?? '',
       topics: List<String>.from(json['topics'] ?? []),
       updatedAt: json['updated_at'] == null ? DateTime.now() :  DateTime.parse(json['updated_at']),
     );
@@ -54,7 +54,7 @@ class BlogModel extends Blog {
       'user_id': userId,
       'title': title,
       'content': content,
-      'img_url': imgUrl,
+      'image_url': imgUrl,
       'topics': topics,
       'updated_at': updatedAt.toIso8601String(),
     };

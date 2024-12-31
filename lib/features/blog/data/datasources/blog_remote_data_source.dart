@@ -57,10 +57,7 @@ class BlogRemoteDataSourceImpl implements BlogRemoteDataSource {
   @override
   Future<List<BlogModel>> getAllBlogs() async {
     try {
-      ///this will working
-      ///like it goes to supabase blogs table and select all things with the help of * and after that it goes to profiles table
-      ///with the help of userId , which present in my table blogs and give the name of that data.
-      /// this is simply join operation
+
       final blogs =
           await supabaseClient.from('blogs').select('*,profiles(name)');
 
